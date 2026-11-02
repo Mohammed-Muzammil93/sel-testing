@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Test</title>
+</head>
+<body>
+    <h2 id="heading">JavaScript Demo</h2>
+
+    <input id="num1" type="number" placeholder="First number">
+    <input id="num2" type="number" placeholder="Second number">
+
+    <button id="addBtn" onclick="addNumbers()">Add</button>
+
+    <p id="result">Result will appear here</p>
+
+    <script>
+        function addNumbers() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            document.getElementById("result").innerText =
+                "Result: " + (a + b);
+        }
+    </script>
+</body>
+</html>
